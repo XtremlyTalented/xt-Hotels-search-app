@@ -1,0 +1,50 @@
+html
+    head
+        title Restaurents App
+        //- link(href = "/img/medal.png", rel = "icon")
+        link(href = "/css/styles.css", rel = "stylesheet")
+        link(rel = "stylesheet", href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+    body
+        div(class = "container")
+            div(class = 'header mainContent')
+                h1 Hotel's Search App
+                h2 #{title}
+                div
+                    a(href='/') Home
+                    a(href='/about') About
+                    a(href='/help') Help
+            |
+            br
+            br
+            |
+            div
+                form(action = "/restaurantsList", method = "post")
+                    select(name = "city", class="form-control container", style="width: 200px;")
+                        option(value = 'select City' hidden) Select City
+                        option(value = 'chennai') Chennai
+                        option(value = 'Bngaluru') Bangaluru
+                        option(value = 'Mumbai') Mumbai
+                        option(value = 'Delhi') Delhi
+                        option(value = 'Hyderabad') Hyderabad
+                        option(value = 'Pune') Pune
+                        option(value = 'Kolkata') Kolkata
+                        option(value = 'Lucknow') Lucknow
+                        option(value = 'Jaipur') Jaipur
+                        option(value = 'Ahmedabad') Ahmedabad
+                        option(value = 'Chadigarh') Chandigarh
+                        option(value = 'Kochin') Kochin
+                        option(value = 'Goa') Goa
+                        option(value = 'Odisha') Odisha
+                        option(value = 'Andra Pradesh') Andra Pradesh
+                    |
+                    br
+                    br
+                    |
+                    input(type = 'submit', Value = 'Submit', class="form-control container" style="width: 100px; color: red; background-color: black;")
+        div(class = 'footer')
+            div
+                a(href='/') Home
+                a(href='/about') About
+                a(href='/help') Help
+            h4 Created by #{name}
+            

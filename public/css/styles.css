@@ -1,0 +1,123 @@
+body {
+    color: white !important;
+    background: black !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.mainContent {
+    flex-grow: 1;
+    color: red;
+    font-family: monospace;
+
+}
+
+.center {
+    text-align: center;
+}
+
+
+.footer {
+    color: red;
+    margin-top: 16px;
+    padding: 16px 0;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.header {
+    color:aqua;
+    margin-top: 16px;
+    margin-bottom: 60px;
+
+}
+
+.header h2 {
+    color: red;
+
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #eeeeee;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+.portrait {
+     width: 300px;
+ }
+
+footer a {
+    font-size: 10px;
+    color: #eeeeee;
+    margin: 15px;
+    text-decoration: none;
+}
+
+
+select {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+option {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+
+}
+#booked {
+    text-decoration: none;
+    font-size: 25px;
+
+    font-style: italic;
+    color: rgba(0, 255, 221, 0.932);
+    font-family: Arial, Helvetica, sans-serif !important;
+    
+}
+.rating{
+    float: right;
+    margin-right: 15px;
+}
+
+.data{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(255, 231, 95, 0.932);
+    font-size: 15px;
+}
+.resimg{
+    float: left;
+    margin-right: 15px;
+}
+
+ol {
+    list-style-type: square;
+}

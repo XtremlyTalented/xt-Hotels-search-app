@@ -1,0 +1,58 @@
+html
+    head
+        title Restaurant Details
+        link(href = "/img/medal.png", rel = "icon")
+        link(href = "/css/styles.css", rel = "stylesheet")
+        link(rel = "stylesheet", href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+    body
+        div(class = 'container header mainContent')
+            h1 Hotel's Search App
+            h2 #{title}
+            div
+                a(href='/') Home
+                a(href='/about') About
+                a(href='/help') Help
+        |
+        br
+        br
+        |
+        div(class = 'container mainContent')
+            div(class = 'data img-rounded floatleft')
+                img(src =`${res_detail.thumb}`, alt="Restaurant Picture", height = '185', width = '185')
+            div(class = 'data floatRight container')
+                a(href=`/restaurant?res_Id=${res_detail.id}`, class = 'action_link') 
+                    h2(id = 'res_Id', style = 'color: red;') 
+                        strong #{res_detail.name}
+                strong #{res_detail.location.locality}
+                h5(style = 'color: aquamarine')
+                    strong #{res_detail.location.address}
+                h4 
+                    strong Cusinies:  #{res_detail.cuisines}
+                    | 
+                    br 
+                    br
+                    | 
+                    strong Timings: #{res_detail.timings}
+                    |
+                    br
+                    br 
+                    |
+                    strong Cost For Two: #{res_detail.currency} #{res_detail.average_cost_for_two}
+                    |
+                    br
+                    br
+                    |
+                    strong User Ratings: #{res_detail.user_rating.aggregate_rating} Voted By: #{res_detail.user_rating.votes}
+                    |
+                    br
+                    br
+                    |
+                    strong Phone Numbers: #{res_detail.phone_numbers}
+            a(id='booked', href='/booked', class='center') Book Your Table
+        div(class = 'footer')
+            div
+                a(href='/') Home
+                a(href='/about') About
+                a(href='/help') Help
+            h4 Created by #{name}
+                
